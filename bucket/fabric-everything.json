@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "description": "Metapackage: installs every V-Sekai fabric Windows app in this bucket.",
+  "homepage": "https://github.com/v-sekai-multiplayer-fabric/fabric-scoop-central",
+  "license": "Unknown",
+  "depends": [
+    "fabric-scoop-central/loop-slice"
+  ]
+}
