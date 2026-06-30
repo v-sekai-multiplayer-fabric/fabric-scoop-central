@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "description": "Metapackage: the observability stack (OTEL collector + VictoriaMetrics/Logs/Traces).",
+  "homepage": "https://github.com/v-sekai-multiplayer-fabric/fabric-scoop-central",
+  "license": "Apache-2.0",
+  "depends": [
+    "fabric-scoop-central/otelcol-contrib",
+    "fabric-scoop-central/victoria-metrics",
+    "fabric-scoop-central/victoria-logs",
+    "fabric-scoop-central/victoria-traces"
+  ]
+}

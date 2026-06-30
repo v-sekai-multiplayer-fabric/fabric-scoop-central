@@ -4,6 +4,7 @@
   "homepage": "https://github.com/v-sekai-multiplayer-fabric/fabric-scoop-central",
   "license": "Unknown",
   "depends": [
-    "fabric-scoop-central/loop-slice"
+    "fabric-scoop-central/loop-slice",
+    "fabric-scoop-central/fabric-observability"
   ]
 }

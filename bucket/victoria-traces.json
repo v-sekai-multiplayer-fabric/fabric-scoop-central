@@ -1,0 +1,26 @@
+{
+  "version": "0.9.3",
+  "description": "VictoriaTraces -- trace storage and query (HTTP 10428).",
+  "homepage": "https://github.com/VictoriaMetrics/VictoriaTraces",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/download/v0.9.3/victoria-traces-windows-amd64-v0.9.3.zip",
+      "hash": "af158d4bd6438d5ed165a13ed40bdfc12edf5ebd639ded776f5b728af5ddd16e"
+    }
+  },
+  "bin": [
+    ["victoria-traces-windows-amd64-prod.exe", "victoria-traces"]
+  ],
+  "checkver": {
+    "url": "https://api.github.com/repos/VictoriaMetrics/VictoriaTraces/releases",
+    "regex": "victoria-traces-windows-amd64-v([\\d.]+)\\.zip"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/download/v$version/victoria-traces-windows-amd64-v$version.zip"
+      }
+    }
+  }
+}

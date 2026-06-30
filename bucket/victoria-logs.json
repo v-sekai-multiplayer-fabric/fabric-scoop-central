@@ -1,0 +1,26 @@
+{
+  "version": "1.51.0",
+  "description": "VictoriaLogs -- log storage and query (HTTP 9428).",
+  "homepage": "https://github.com/VictoriaMetrics/VictoriaLogs",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v1.51.0/victoria-logs-windows-amd64-v1.51.0.zip",
+      "hash": "03137890016bd6b622b0feef82a2caefc2976feefbbb5946e530105ca562d5e8"
+    }
+  },
+  "bin": [
+    ["victoria-logs-windows-amd64-prod.exe", "victoria-logs"]
+  ],
+  "checkver": {
+    "url": "https://api.github.com/repos/VictoriaMetrics/VictoriaLogs/releases",
+    "regex": "victoria-logs-windows-amd64-v([\\d.]+)\\.zip"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v$version/victoria-logs-windows-amd64-v$version.zip"
+      }
+    }
+  }
+}

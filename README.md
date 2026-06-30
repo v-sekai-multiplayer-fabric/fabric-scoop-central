@@ -9,4 +9,6 @@ scoop bucket add fabric-scoop-central https://github.com/v-sekai-multiplayer-fab
 scoop install fabric-everything
 ```
 
-`fabric-everything` installs every app in the bucket. For just the demo: `scoop install loop-slice`.
+`fabric-everything` installs every app in the bucket. For just the demo:
+`scoop install loop-slice`. For just the observability stack (OTEL collector +
+VictoriaMetrics/Logs/Traces): `scoop install fabric-observability`.
