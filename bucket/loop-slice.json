@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0-dev.6",
+  "description": "V-Sekai loot-action vertical slice -- native Windows demo (authoritative server, client, bots, optional observability).",
+  "homepage": "https://github.com/v-sekai-multiplayer-fabric/godot-loop-slice",
+  "license": "Unknown",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/v-sekai-multiplayer-fabric/godot-loop-slice/releases/download/v0.1.0-dev.6/v-sekai-loop-slice-demo-windows.zip",
+      "hash": "3a90f41386b2ca92e7a4d37b7224358a44f04cb5d040dbeb422b2e4a5a23719d"
+    }
+  },
+  "bin": [
+    ["run-demo.cmd", "loop-slice-demo"],
+    ["run-server.cmd", "loop-slice-server"],
+    ["run-client.cmd", "loop-slice-client"]
+  ],
+  "shortcuts": [
+    ["run-demo.cmd", "V-Sekai Loop-Slice Demo"]
+  ],
+  "checkver": {
+    "url": "https://api.github.com/repos/v-sekai-multiplayer-fabric/godot-loop-slice/releases",
+    "regex": "v([\\d.]+-dev\\.\\d+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/v-sekai-multiplayer-fabric/godot-loop-slice/releases/download/v$version/v-sekai-loop-slice-demo-windows.zip"
+      }
+    }
+  }
+}
