@@ -1,0 +1,1 @@
+fabric-scoop-central metapackage placeholder; installs its dependencies.
